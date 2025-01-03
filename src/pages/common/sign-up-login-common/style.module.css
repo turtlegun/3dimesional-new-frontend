@@ -1,0 +1,68 @@
+.common_container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #161515;
+}
+.header{
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 8.3vh;  
+    position: absolute;
+    top: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middle_content{
+    width: 27.78vw;
+    height: 11.46vh;
+    top: 44.24vh;
+    left: 15.42vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.google_athuentication{
+    border: 2px solid white;
+    width: 25vw;               
+    height: 4.88vh;            
+    top: 82.91vh;             
+    left: 62.15vw;
+    border-radius:  0.69vw;;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.signup_text{
+
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F4F5F9;
+}
+.skip{
+    width: 10.76vw;
+height: 3.91vh;
+top: 75.10vh;
+left: 69.24vw;
+border-radius:  0.69vw;
+background-color: #F4F5F9;
+position: absolute;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skip span{
+
+    
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 16px;
+}

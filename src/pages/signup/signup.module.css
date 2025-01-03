@@ -1,0 +1,64 @@
+.input_container{
+    width: 29.93vw;
+    height: 60.07vh;
+    top: 15.12vh;
+    left: 59.65vw;
+    position: absolute;
+    border-radius: 0.69vw;
+    border: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vw;
+}
+.input_container input[type="text"],
+.input_container input[type="email"],
+.input_container input[type="password"]{
+    width: 22.22vw;
+    height: 3.91vh;
+color: #F4F5F9;
+
+border-radius: 0.4vw;
+}
+.input_container button[type="submit"]{
+    background-color: #161515;
+
+border-radius: 0.69vw;
+color: #F4F5F940;
+border: solid 1px white;
+
+font-family: "Rokkitt", serif;
+font-optical-sizing: auto;
+font-weight: 600;
+font-size: 16px;
+
+}
+.label{
+
+    color: white;
+    opacity: 0;
+    transform: translate(0vw, 0.98vh); 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.label.clicked {
+    opacity: 1;
+    transform: translate(0vw, -0.2vh); 
+  }
+.error{
+
+    color: #FF3336BF;
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 10px;
+
+}
+.error_not{
+    opacity: 0;
+}  

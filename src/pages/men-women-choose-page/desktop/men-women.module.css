@@ -1,0 +1,33 @@
+.arrow{
+    width: 3.125vw;
+    height: 4.394vh;
+    top: 17.87vh;
+    left: 13.89vw;
+    padding: 0.977vh 0 0 0;
+    gap: 0.694vw;
+    opacity: 1;
+    position: absolute;
+}
+.men{
+    width: 18.83vw;
+    height: 10.25vh;
+    top: 44.73vh;
+    left: 27.43vw;
+    padding: 0.977vh 0 0 0;
+    gap: 0.694vw;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.women{
+width: 20.83vw;
+    height: 10.25vh;
+    top: 44.73vh;
+    left: 51.74vw;
+    padding: 0.977vh 0 0 0;
+    gap: 0.694vw;
+    opacity: 1; 
+    position: absolute;
+    border-radius: 20px;
+
+}
