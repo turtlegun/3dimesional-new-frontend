@@ -1,10 +1,9 @@
-import { lazy, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import style from "./mobile.module.css";
 
 const Mobile_header = lazy(() =>
   import("../../common/head-background/mobile/header-background-mobile")
 );
-import { generatePattern } from "./helper";
 import axiosInstance from "../../../../axios-config";
 import Model_viewer from "../model-viewer/model-viewer";
 
@@ -37,7 +36,8 @@ const Mobile_Merchendise = () => {
       <div className={style.model_grid}>
   {images &&
     images.map((value, i) => (
-      <div className={i % 2 === 0 ? style.left : style.right} key={i}>
+      <Suspense key={i} fallback={<p>Loading</p>}>
+      <div className={i % 2 === 0 ? style.left : style.right}>
         <Model_viewer
           url={value.modelUrl}
           size={'mobile'}
@@ -45,6 +45,7 @@ const Mobile_Merchendise = () => {
           scale={value.scale}
         />
       </div>
+      </Suspense>
     ))}
 </div>
     </>

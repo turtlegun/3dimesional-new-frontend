@@ -3,7 +3,7 @@ import error_logo from '../../../assets/sign-up/error_logo.svg'
 import cross from '../../../assets/sign-up/cross.svg'
 import { Link } from 'react-router'
 
-const Error_page=({server_error,setServer_error,redirect='not redirect'})=>{
+const Error_page_vericication=({server_error,setServer_error,redirect='not redirect'})=>{
     return(
         <>
         <div className={style.div_container}>
@@ -26,4 +26,4 @@ const Error_page=({server_error,setServer_error,redirect='not redirect'})=>{
         </>
     )
 }
-export default Error_page
+export default Error_page_vericication

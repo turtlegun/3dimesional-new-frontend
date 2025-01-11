@@ -1,0 +1,44 @@
+.common_container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #161515;
+  }
+  .header{
+      background-color: black;
+      position: absolute;
+      width: 100vw;
+      height: 8.3vh;  
+      position: absolute;
+      top: 0vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .middle_content{
+      width: 27.78vw;
+      height: 11.46vh;
+      top: 44.24vh;
+      left: 15.42vw;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .main_header{
+    color: #D8D8D8;
+    font-family: "Sancreek", serif;
+    font-weight: 400;
+    font-size: 48px;
+  }
+
+@media (max-width:1024px) and (min-width:441px){
+    .middle_content{
+        width: 29.297vw;
+height: 6.440vh;
+top: 22.398vh;
+left: 35.352vw;
+    }
+
+}  
+

@@ -1,9 +1,9 @@
-import background from "../../assets/home-page/background.png";
-import { lazy, Suspense, useEffect, useState } from "react";
+import background from "../../assets/home-page/background.webp";
+import { lazy, useEffect, useState } from "react";
 const Men_merchendise_desktop = lazy(() => import("./desktop/men-merchendise"));
-import background_mobile from "../../assets/home-page/mobile_background.jpg";
+import background_mobile from "../../assets/home-page/mobile_background.webp";
 import background_tablet from "../../assets/home-page/background_tablet.jpg";
-const Loading = lazy(() => import("../common/loading/loading"));
+
 const Mobileview=lazy(()=>import('./mobile/mobile-merchendise'))
 function Men_merchendise() {
   const [background_image, setBackground_image] = useState("");
@@ -62,11 +62,12 @@ function Men_merchendise() {
       }}
     >
       {/* <AnimatedSVG /> */}
-      <Suspense fallback={<Loading />}>
+    
         {screenSize === "desktop" && <Men_merchendise_desktop />}
+      
         {/* {screenSize === 'tablet' && <Home_tablet />} */}
   {screenSize === 'mobile' && <Mobileview />} 
-      </Suspense>
+ 
     </div>
   );
 }

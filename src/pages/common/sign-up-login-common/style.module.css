@@ -1,68 +1,87 @@
+:root {
+  --background: #161515;
+}
+.header,
+.middle_content,
+.google_athuentication,
+.skip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.signup_text,
+.skip {
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  font-size: 16px;
+}
 .common_container {
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
-  background-color: #161515;
+  background-color: var(--background);
 }
-.header{
-    background-color: black;
-    position: absolute;
-    width: 100vw;
-    height: 8.3vh;  
-    position: absolute;
-    top: 0vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.middle_content{
-    width: 27.78vw;
-    height: 11.46vh;
-    top: 44.24vh;
-    left: 15.42vw;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.google_athuentication{
-    border: 2px solid white;
-    width: 25vw;               
-    height: 4.88vh;            
-    top: 82.91vh;             
-    left: 62.15vw;
-    border-radius:  0.69vw;;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-.signup_text{
 
-    font-family: "Rokkitt", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 16px;
-    color: #F4F5F9;
+.header {
+  background-color: var(--background);
 }
-.skip{
-    width: 10.76vw;
-height: 3.91vh;
-top: 75.10vh;
-left: 69.24vw;
-border-radius:  0.69vw;
-background-color: #F4F5F9;
-position: absolute;
-display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.skip span{
 
-    
-    font-family: "Rokkitt", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-size: 16px;
+.google_athuentication {
+  border: 2px solid white;
+  border-radius: 0.69vw;
+  cursor: pointer;
+}
+
+.signup_text {
+  color: #f4f5f9;
+}
+
+.skip {
+  border-radius: 0.69vw;
+  background-color: #f4f5f9;
+  border: none;
+  outline: none;
+}
+
+@media (min-width: 441px) and (max-width: 1024px) {
+  .middle_content {
+    width: 29.3vw;
+    height: 6.44vh;
+    top: 22.4vh;
+    left: 35.35vw;
+  }
+  .skip {
+    width: 14.65vw;
+    height: 2.93vh;
+    top: 67.3vh;
+    left: 42.7vw;
+  }
+  .google_athuentication {
+    width: 35.16vw;
+    height: 3.66vh;
+    top: 73.9vh;
+    left: 32.4vw;
+  }
+}
+@media (max-width: 440px) {
+  .middle_content {
+    width: 68.18vw;
+    height: 9.21vh;
+    top: 14.95vh;
+    left: 15.91vw;
+  }
+  .skip {
+    width: 27.5vw;
+    height: 3.14vh;
+    top: 71.7vh;
+    left: 36.14vw;
+    border-radius: 0.6vh;
+    font-size: 2.73vw;
+  }
+  .google_athuentication {
+    width: 81.82vw;
+    height: 5.22vh;
+    top: 80.06vh;
+    left: 9.09vw;
+    border-radius: 0.6vh;
+  }
 }

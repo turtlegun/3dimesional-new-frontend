@@ -1,0 +1,64 @@
+.div_container{
+    width: 29.51vw;
+    height: 41.50vh;
+    top: 29.20vh;
+    left: 35.21vw;
+    position: absolute;
+    background-color: #F4F5F9;
+    border-radius: 0.5vw;
+}
+.error_log{
+    width: 4.86vw;
+height: 6.84vh;
+top: 7.03vh;
+left: 	12.36vw;
+position: absolute;
+}
+.message_container{
+width: 21.74vw;
+height: auto;
+top: 16.71vh;
+left: 3.96vw;
+position: absolute;
+}
+.message_container span{
+    font-family: "Rokkitt", serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+.try_again{
+    width: 12.71vw;
+height: 2.25vh;
+top: 27.22vh;
+left: 8.61vw;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.display{
+    font-family: "Rokkitt", serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.dismiss{
+    background-color: #3A513F;
+    width: 18.26vw;
+height: 4.88vh;
+top: 32.91vh;
+left: 5.22vw;
+position: absolute;
+border-radius: 0.4vw;
+color:#F4F5F9;
+font-family: "Rokkitt", serif;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+}
+.cross{
+    width: 1.37vw;
+    height: 1.92vh;
+    top: 0.50vh;
+    left: 27vw;
+    position: absolute;  
+}

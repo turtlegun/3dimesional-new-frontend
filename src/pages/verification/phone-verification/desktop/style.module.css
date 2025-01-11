@@ -1,0 +1,91 @@
+:root {
+  --font-primary: "Rokkitt", serif;
+  --font-secondary: "Sancreek", serif;
+}
+
+
+.phone_number_showing ,
+.send_button,
+.container_header ,
+.otp_header ,
+.otp_input,
+.timer ,
+.resend_header  ,
+.resend ,
+.verify
+ {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  text-align: center;
+  color: #f4f5f9;
+}
+
+
+.otp_input {
+  width: 2.99vw;
+  height: 5.86vh;
+  text-align: center;
+  background-color: #f4f5f933;
+  border-radius: 0.6vw;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+.header{
+  color: #D8D8D8;
+  font-family:var(--font-secondary);
+  font-weight: 400;
+  font-size: 48px;
+}
+
+@media (max-width:1024px) and (min-width:441px){
+  .verification_container{
+    width: 27.54vw;
+    height: 42.02vh;
+    top: 35.41vh;
+    left: 36.23vw;
+  }
+  .phone_number_showing{
+    width: 12.5vw;
+height: 3.59vh;
+top: 5.99vh;
+left: 7.75vw;
+  }
+
+  .send_button{
+    width: 11.72vw;
+    height: 2.56vh;
+    top: 11.77vh;
+    left: 8.14vw;
+  }
+  .otp_input{
+    height: 100%;
+  }
+}
+@media (max-width:440px){
+  .verification_container{
+    width: 80vw;
+    height: 58vh;
+    top: 32vh;
+    left: 15vw;
+  }
+  .phone_number_showing{
+    width: 40.23vw;
+height: 5.13vh;
+top: 12vh;
+left: 15vw;
+
+  }
+  .otp_container{
+    height: 6.28vh;
+    width: 75vw;
+    top: 30vh;
+    gap:2.5vw;
+    left: 1vw;
+  }
+  .otp_input{
+    width: 9.77vw;
+height: 6.28vh;
+border-radius: 2.1vw;
+  }
+}

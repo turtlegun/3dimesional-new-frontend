@@ -1,6 +1,147 @@
-.login_contanier{
+.container_header,
+.heading{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.proccessed,
+.input,
+.login_container {
+  border-radius: 0.4vw;
+  outline: none;
+}
+.proccessed,
+.login_container {
+  border: solid 1px #f4f5f940;
+}
 
-    background-color: #161515;
-    width: 100vw;
-    height: 100vh;
+.heading {
+  font-family: "Sancreek", serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #d8d8d8;
+}
+
+.container_header {
+   color: #f4f5f980;
+}
+.input_conatiner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.input_conatiner label{
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  font-size: 1.11vw;
+  color: white;
+  text-align: left;
+  display: block;
+  opacity: 0;
+  transform: translate(0vw, 0.98vh); 
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.input_conatiner label.clicked{
+  opacity: 1;
+  transform: translate(0vw, -0.2vh); 
+}
+
+.input {
+  width: 22.22vw;
+  height: 3.91vh;
+  border: none;
+}
+.proccessed {
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  font-size: 1.11vw;
+   background-color: #161515;
+  color: #f4f5f940;
+}
+@media (min-width: 441px) and (max-width: 1024px) {
+  .back_arrow {
+    width: 2.93vw;
+    height: 2.2vh;
+    top: 36.01vh;
+    left: 32.42vw;
+  }
+  .heading {
+    width: 26.36vw;
+    height: 2.83vh;
+    top: 36.16vh;
+    left: 40.82vw;
+    font-size: 24px;
+  }
+  .login_container {
+    width: 41.82vw;
+    height: 25.23vh;
+    top: 40.37vh;
+    left: 28.09vw;
+    border: none;
+  }
+  .input_conatiner {
+    width: 35.16vw;
+    height: 17.23vh;
+    top: 1vh;
+    left: 4vw;
+    gap: 1vw;
+  }
+  .input {
+    width: 35.16vw;
+    height: 3.66vh;
+
+  }
+  .proccessed {
+    width: 24.22vw;
+    height: 3.66vh;
+    top: 20vh;
+    left: 9vw;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .back_arrow {
+    width: 6.82vw;
+    height: 3.14vh;
+    top: 34.31vh;
+    left: 9.09vw;
+  }
+  .heading {
+    width: 42.73vw;
+    height: 2.61vh;
+    top: 34.52vh;
+    left: 28.64vw;
+    font-size: 20px;
+    
+  }
+  .login_container {
+    width: 81.82vw;
+    height: 28.23vh;
+    top: 42.37vh;
+    left: 9.09vw;
+    border: none;
+  }
+  .input_conatiner {
+    width: 73.82vw;
+    height: 14.23vh;
+    top: 2vh;
+    left: 0vw;
+    gap: 2vw;
+  }
+  .input {
+    width: 73.82vw;
+    height: 5.23vh;
+ }
+  .proccessed {
+    width: 56.36vw;
+    height: 5.23vh;
+    top: 20vh;
+    left: 13vw;
+    font-size: 20px;
+  }
+  .input_conatiner label{
+    font-size: 3.1vw;
+  }
 }

@@ -1,9 +1,8 @@
 import companyname from "../../../assets/home-page/name.png";
 import Tshirt from "../../../assets/home-page/tshirt.png";
-import cart from "../../../assets/home-page/cart.svg";
-import wishlist from "../../../assets/home-page/heart.svg";
+
 import Tshirt2 from "../../../assets/home-page/tshirt2.png";
-import default_user from "../../../assets/home-page/default_user.svg";
+
 import style from "./home-component.module.css";
 import { Link } from "react-router";
 
@@ -17,7 +16,7 @@ function HomeComponent() {
       </div>
 
       <div className={style.header}>
-       <Link to={'/home'}> <span>HOME </span></Link>
+       <Link to={'/'}> <span>HOME </span></Link>
         <span>ABOUT US</span>
         <span>CONTACT US</span>
       </div>
@@ -58,6 +57,7 @@ function HomeComponent() {
       </div>
 
       <div className={style.navbar}>
+        <Link to={'/login'}>
         <span>
           <button
             style={{
@@ -76,8 +76,8 @@ function HomeComponent() {
           >
             Login
           </button>
-        </span>
-        <span>
+        </span></Link>
+       <Link to={'/signup'}> <span>
           {" "}
           <button
             style={{
@@ -96,7 +96,7 @@ function HomeComponent() {
           >
             Sign Up
           </button>
-        </span>
+        </span></Link>
       </div>
     </>
   );

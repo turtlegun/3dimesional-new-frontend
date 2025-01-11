@@ -2,7 +2,7 @@ import CustomValidationError from "../../../custom-error/custom-error";
 
 const patterns = {
   email: /^([a-zA-Z\d.-]+)@([a-zA-Z\d-]+)\.([a-zA-Z]{2,8})(\.[a-zA-Z]{2,8})?$/,
-  name: /^[a-zA-Z\d]{3,16}$/,
+  name:/^[a-zA-Z\d\s]{3,16}$/,
   password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@._-]{8,}$/,
   phone: /^[0-9]{10}$/,
 };

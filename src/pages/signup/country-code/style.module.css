@@ -1,0 +1,29 @@
+
+.phone_conatiner b{
+    font-size: 0.69vw;
+}
+
+
+@media (max-width:1024px) and (min-width:441px){
+   .phone_conatiner{
+    width: 35.16vw;
+    height: 3.66vh;
+    border-radius: 1vw;
+   } 
+   .phone_conatiner b{
+    font-size: 1vw;
+}
+}
+@media (max-width:440px) {
+    .phone_conatiner{
+        width: 81.82vw;
+        height: 4.23vh;
+        border-radius: 1vw;
+    } 
+    .phone_conatiner input{
+        height: 100%;
+    }
+    .phone_conatiner b{
+        font-size: 2vw;
+    }
+ }

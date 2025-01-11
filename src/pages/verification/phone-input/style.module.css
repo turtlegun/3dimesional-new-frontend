@@ -1,0 +1,132 @@
+.main_header{
+    color: #D8D8D8;
+    font-family: "Sancreek", serif;
+    font-weight: 400;
+    font-size: 48px;
+  }
+
+
+.inside_input {
+  color: #f4f5f980;
+  font-family: "Rokkitt", serif;
+  font-weight: 500;
+  font-size: 1.1vw;
+}
+
+.input_conatiner input {
+  width: 22.22vw;
+  height: 3.91vh;
+  outline: none;
+}
+
+.input_conatiner label {
+  font-family: "Rokkitt", serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #f4f5f9bf;
+  transform: translate(-6.3vw, 2vh);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.input_conatiner label.clicked {
+  transform: translate(-6.3vw, 0vh);
+  opacity: 1;
+}
+
+.input_conatiner span {
+  font-family: "Rokkitt", serif;
+  font-weight: 500;
+  font-size: 0.72vw;
+  color: #ff3336bf;
+  opacity: 0;
+}
+.input_conatiner span.input_error {
+  opacity: 1;
+}
+
+.submit_button {
+  color: #f4f5f940;
+  font-family: "Rokkitt", serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) and (min-width: 441px) {
+  .main_conatiner {
+    width: 42.156vw;
+    height: 23vh;
+    left: 30vw;
+    top: 52vw;
+  }
+  .input_conatiner {
+    width: 38.156vw;
+    height: 13vh;
+    top: 2vh;
+  }
+
+  .input_conatiner input {
+    width: 35.15625vw;
+    height: 3.655vh;
+    border-radius: 1.1vw;
+  }
+  .input_conatiner label{
+    transform: translate(-9.9vw, 2vh);
+  }
+  .input_conatiner label.clicked {
+    transform: translate(-9.9vw, 0vh);
+ 
+  }
+  .input_conatiner span{
+    font-size: 1.3vw;
+  }
+  .submit_button{
+    width: 24.219vw;
+    height: 3.659vh;
+    top: 59.74vh;
+    left: 37.891vw;
+top: 16vh;
+left: 9vw;
+}
+
+}
+
+@media (max-width: 440px)  {
+    .main_conatiner {
+      width: 87.156vw;
+      height: 28vh;
+      left: 7.091vw;
+      top: 37vh;
+    }
+    .input_conatiner {
+        width: 85.818vw;
+        height: 17.228vh;
+        top: 2vh;
+        left: 1vw;
+        
+    }
+  
+    .input_conatiner input {
+        width: 81.818vw;
+        height: 5.228vh;
+      border-radius: 2.1vw;
+    }
+    .input_conatiner label{
+      transform: translate(-21.9vw, 2vh);
+    }
+    .input_conatiner label.clicked {
+      transform: translate(-21.9vw, 0vh);
+   
+    }
+    .input_conatiner span{
+      font-size: 2.3vw;
+    }
+    .submit_button{
+        width: 56.364vw;
+height: 5.229vh;
+top: 60.252vh;
+left: 21.818vw;
+top: 20vh;
+left: 14vw;
+    }
+  
+  }
